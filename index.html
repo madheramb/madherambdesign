@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Heramb Pawars Portfolio">
+      <meta name="author" content="madheramb">
+      <title>Madheramb UX/UI Portfolio</title>
+      <!-- font icons -->
+      <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+      <!-- Bootstrap + Steller main styles -->
+      <link rel="stylesheet" href="assets/css/steller.css">
+      <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+      <style>
+         .contact {
+         padding: 40px 0;
+         }
+         .contact .heading h2 {
+         font-size: 30px;
+         font-weight: 700;
+         margin: 0;
+         padding: 0;
+         }
+         .contact .heading h2 span {
+         color: #ff9100;
+         }
+         .contact .heading p {
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 1.7;
+         color: #999999;
+         margin: 20px 0 60px;
+         padding: 0;
+         }
+         .contact .form-control {
+         padding: 25px;
+         font-size: 13px;
+         margin-bottom: 10px;
+         background: #f9f9f9;
+         border: 0;
+         border-radius: 10px;
+         }
+         .contact button.btn {
+         padding: 10px;
+         border-radius: 10px;
+         font-size: 15px;
+         background: #ff7a57;
+         color: #ffffff;
+         }
+         .contact .title h3 {
+         font-size: 18px;
+         font-weight: 600;
+         }
+         .contact .title p {
+         font-size: 14px;
+         font-weight: 400;
+         color: #999;
+         line-height: 1.6;
+         margin: 0 0 40px;
+         }
+         .contact .content .info {
+         margin-top: 30px;
+         }
+         .contact .content .info i {
+         font-size: 30px;
+         padding: 0;
+         margin: 0;
+         color: #02434b;
+         margin-right: 20px;
+         text-align: center;
+         width: 20px;
+         }
+         .contact .content .info h4 {
+         font-size: 13px;
+         line-height: 1.4;
+         }
+         .contact .content .info h4 span {
+         font-size: 13px;
+         font-weight: 300;
+         color: #999999;
+         }
+         body .footer {
+         z-index: 1;
+         --footer-background: #ed5565;
+         display: grid;
+         position: relative;
+         grid-area: footer;
+         min-height: 12rem;
+         }
+         body .footer .bubbles {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         height: 1rem;
+         background: var(--footer-background);
+         filter: url("#blob");
+         }
+         body .footer .bubbles .bubble {
+         position: absolute;
+         left: var(--position, 50%);
+         background: #ff7a57;
+         border-radius: 100%;
+         animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+         transform: translate(-50%, 100%);
+         }
+         body .footer .content {
+         z-index: 2;
+         display: grid;
+         grid-template-columns: 1fr auto;
+         grid-gap: 4rem;
+         padding: 2rem;
+         background: #ff7a57;
+         }
+         body .footer .content a, body .footer .content p {
+         color: #f5f7fa;
+         text-decoration: none;
+         }
+         body .footer .content b {
+         color: white;
+         }
+         body .footer .content p {
+         margin: 0;
+         font-size: 0.75rem;
+         }
+         body .footer .content > div {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         }
+         body .footer .content > div > div {
+         margin: 0.25rem 0;
+         }
+         body .footer .content > div > div > * {
+         margin-right: 0.5rem;
+         }
+         body .footer .content > div .image {
+         align-self: center;
+         width: 4rem;
+         height: 4rem;
+         margin: 0.25rem 0;
+         background-size: cover;
+         background-position: center;
+         }
+         @keyframes bubble-size {
+         0%, 75% {
+         width: var(--size, 4rem);
+         height: var(--size, 4rem);
+         }
+         100% {
+         width: 0rem;
+         height: 0rem;
+         }
+         }
+         @keyframes bubble-move {
+         0% {
+         bottom: -4rem;
+         }
+         100% {
+         bottom: var(--distance, 10rem);
+         }
+         }
+          
+          .box-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  transition: .3s;
+  text-align: center;
+      border: 1px solid #ff7a57;
+}
+
+.img-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+
+
+  margin-bottom: 10px;
+ 
+  
+}
+
+.portfoliomenu{
+    color: rgba(0, 0, 0, 0.5);font-size: 13px;
+    font-weight: bold;
+    margin: 0 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none !important;
+    display: block;
+    padding: 0.5rem 0.5rem;
+}
+
+.header-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.img-text {
+  font-family: Poppins;
+  padding-top: 20px;
+}
+
+.img-text p{
+    text-align: left;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.single-box:hover {
+  background: aliceblue;
+    color: #000;
+     
+}
+
+      </style>
+   </head>
+   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" >
+   
+      <!-- Page navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+         <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/imgs/new_logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto align-items-center">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#certifications">Certifications</a>
+                  </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link"  href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#education">Education</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#experience">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#awards">Awards</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href = "https://drive.google.com/file/d/1x0dpGVgGHfXYWrPkhr9vGOfoPlMaSiiV/view?usp=sharing"
+                        Download = "Heramb_Pawar_Resume" target="_blank">
+                     <button class="- btn btn-primary rounded ml-4" type = "button">Download CV</button>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- End of page navibation -->
+      <!-- Page Header -->
+      <header class="header" id="home">
+         <div class="container">
+            <div class="infos">
+               <h6 class="subtitle">hello,I'm</h6>
+               <h6 class="title" style="color:#ff7a57;">Heramb Pawar</h6>
+               <div class="containers">
+                  <section class="animation">
+                     <div class="first comic-neue-bold ">
+                        <div>UI/UX Designer</div>
+                     </div>
+                     <div class="second comic-neue-bold ">
+                        <div>Web Designer</div>
+                     </div>
+                     <div class="third comic-neue-bold ">
+                        <div>Product Designer</div>
+                     </div>
+                  </section>
+               </div>
+               <div class="buttons pt-3">
+                  <p class="welcome_msg" style="font-size: 15px;">I design with <em class="Words" style="color:#ff7a57;"><strong>purpose</strong></em> and <em class="Words" style="color:#ff7a57;"><strong>empathy</strong></em> — blending <em class="Words" style="color:#ff7a57;"><strong>function</strong></em>, <em class="Words" style="color:#ff7a57;"><strong>form</strong></em>, and <em class="Words" style="color:#ff7a57;"><strong>human connection</strong></em>.
+From pharmacy tools to pet platforms, every <em class="Words" style="color:#ff7a57;"><strong>pixel</strong></em> I place is backed by <em class="Words" style="color:#ff7a57;"><strong>thought</strong></em>, <em class="Words" style="color:#ff7a57;"><strong>research</strong></em>, and <em class="Words" style="color:#ff7a57;"><strong>care</strong></em>.<br>
+
+ <em class="welcomemsg" style="color: #ff7a57;"><strong>Dive in. Explore the journey. Let’s make something meaningful.</strong></em></p>
+               </div>
+               <div class="socials mt-4">
+                  <a class="social-item" href="https://www.linkedin.com/in/herambpawar/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a class="social-item" href="https://www.behance.net/madheramb" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                  <a class="social-item" href="https://www.facebook.com/reddevil.heramb" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+               </div>
+            </div>
+            <div class="img-holder">
+               <img src="assets/imgs/Heramb.png" alt="">
+            </div>
+         </div>
+      </header>
+      <!-- End of Page Header -->
+      <!-- About section -->
+      <section id="about" class="section mt-3">
+         <div class="container mt-5">
+            <div class="row text-center text-md-left">
+               <div class="col-md-3">
+                  <img src="assets/imgs/object.svg" alt="" class="img-thumbnail mb-4">
+               </div>
+               <div class="pl-md-4 col-md-9">
+                  <h6 class="title">Heramb Pawar</h6>
+                  <p class="subtitle">- a UI/UX Designer, Web Designer, and Product Thinker</p>
+                  <p style="text-align: justify;">A part designer, part problem-solver, full-time pixel perfectionist.
+I design digital products that feel human. Whether it’s simplifying prescription refills or building pet care platforms, I blend strategy, empathy, and clean design to shape experiences people love.
+
+
+
+</p>
+                   <p class="aboutsubtitles" style="font-size: 22px; color:#ff7a57;"><b>What I Do </b></p>
+                   <p>I design experiences that work and wow. From dashboards that organize chaos to mobile apps that simplify your day, I shape ideas into interactive journeys that make users feel right at home.</p>
+                  <p class="aboutsubtitles" style="font-size: 22px; color:#ff7a57;"><b>My Philosophy</b></p>
+                   <p>Design is my lens to understand people and improve their lives.
+I don’t chase trends — I chase insights. My work is rooted in empathy, validated by research, and refined through feedback. I build for impact, not just aesthetics.</p>
+                   <p class="aboutsubtitles" style="font-size: 22px; color:#ff7a57;"><b>Tools & Skills </b></p>
+                   <p>My toolbox is packed with Figma files, sticky notes, and user insights.
+I switch seamlessly between sketching user journeys, building pixel-perfect mockups, and testing prototypes — all while sipping coffee and iterating like a mad scientist.</p>
+                 <p class="aboutsubtitles" style="font-size: 22px; color:#ff7a57;"><b>Let’s Connect </b></p>
+                   <p>Ready to turn ideas into intuitive, beautiful, human-first designs?
+Whether you’re looking to collaborate, brainstorm, or just share your love for clean UI and a strong cup of coffee — I’d love to connect.
+
+Click the magic button below and let's meet on LinkedIn!</p>
+                  <a href = "https://www.linkedin.com/in/herambpawar/"
+                     Download = "Linkedin" target="_blank">
+                  <button class="btn btn-primary rounded mt-3" type = "button"> Magic Button </button>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Service section -->
+      <section id="certifications" class="section">
+         <div class="container text-center">
+            <h6 class="subtitle" style="font-size: 15px;"><b>Certifications</b></h6>
+            <h6 class="section-title mb-4" style="color: #ff7a57;"><b>What Do I Have</b></h6>
+            <p class="mb-5 pb-4">Growth never stops — and neither do I.
+Along the way, I’ve earned certifications that sharpened my skills, expanded my thinking, and deepened my commitment to thoughtful, user-centered design.</p>
+            <div class="row">
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="http://ude.my/UC-OKKAWT15" target="_blank" style="text-decoration: none;">  <i class="fa fa-certificate" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">User Experience Design Fundamentals</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/e07585aa939b39609bcb0be1bd5bad4d21b800f5b0a33f33aba36e227d4552f1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BwXuIG%2BvAQ3i2VUY9Ae3%2BQw%3D%3D" target="_blank" style="text-decoration: none;">  <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">UX Foundations: Interaction Design</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/df9eafd2e5633db4d7b21b84d1a9ca8c245496f553ce066f388633199473f0f9" target="_blank" style="text-decoration: none;">  <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px; padding: 1px;">Agile User Experience Design and Research</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/47133faaf1da24220a3b4b606b6aa27d4012c9cb1d360342a968c490e82ac461" target="_blank" style="text-decoration: none;">  <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">Learning Design<br> Research</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/f9171dc820a3add1ad171b2d0e375bd403ea906a16f1eece1075abc289711313" target="_blank" style="text-decoration: none;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <h5 style="font-size: 17px;">Figma for UX <br>Design</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/3af786b3ac01f435e27f389d554b54338f735ee60d38d0b2d87d03f31354ede1" target="_blank" style="text-decoration: none;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <h5 style="font-size: 17px;">Interaction Design: <br>Dashboards and Visualization</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="http://ude.my/UC-0YGGZAYF" target="_blank" style="text-decoration: none;"><i class="fa fa-certificate" aria-hidden="true"></i></a>
+                        <h5 style="font-size: 17px;">Adobe XD:Beginner to Expert - Design, Prototype, HandOff</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/9c0b0aa04e798382a13162ba288d626d286fbbe254808d99060f61f91adf7c79" target="_blank" style="text-decoration: none;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <h5 style="font-size: 17px;padding: 1px;">Designing with the WCAG 2.2 Guidelines</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/cfe88762fb140775217bac08e9733d81b9b8098c753193bd403104c616fba5dd" target="_blank" style="text-decoration: none;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <h5 style="font-size: 17px;">Accessible Layout for <br>the Web</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/6929d578d39cc605b6701b75087646c8b637601ef6b55e3425e665e55584b289" target="_blank" style="text-decoration: none;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <h5 style="font-size: 17px;">Using AI in the UX Design Process</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/fc7bce06f37714f18fc9f577ab27d39c564acea1eae73223dea45a5097abc18e" target="_blank" style="text-decoration: none;">  <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">Sketching for <br>UX Designers</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/ef98163a4ec0018a6eb36f09d01c3034792434cfb67c9183db1c9ae00536b0ce" target="_blank" style="text-decoration: none;">  <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">UX Foundations: Multidevice Design</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/2a1c2bdf65467a3aaef01bde43618896a170acca9124445a7c51d5c46bfb90f3" target="_blank" style="text-decoration: none;">  <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">User Experience for <br>Web Design</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/learning/certificates/669ae3def3e82bed39dc2eab0a0d7a7db304f1c3e8bec4899cab17b97c820f6f" target="_blank" style="text-decoration: none;">  <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">Using Style Guides to Bridge Design and Development</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="http://ude.my/UC-IWY2U4HX" target="_blank" style="text-decoration: none;">  <i class="fa fa-certificate" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">InVision Studio for <br>UI Designers</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="http://ude.my/UC-Y2BD3R3C" target="_blank" style="text-decoration: none;">  <i class="fa fa-certificate" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">Sketch App - Modern <br>UI Design</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="http://ude.my/UC-1UBCCK22" target="_blank" style="text-decoration: none;">  <i class="fa fa-certificate" aria-hidden="true"></i> </a>
+                        <h5 style="font-size: 17px;">DESIGN RULES: Principles + Practices for Great UI Design</h5>
+                     </div>
+                  </div>
+               </div>
+                 <div class="col-sm-6 col-md-3 mb-4">
+                  <div class="custom-card card border">
+                     <div class="card-body">
+                        <a href="https://www.linkedin.com/in/herambpawar/details/certifications/" target="_blank" style="text-decoration: none;"> <img src="assets/imgs/ezgif.com-gif-maker.gif" alt="" style="width: auto; height: 75px;"> </a>
+                        <h5 style="font-size: 17px;">More Certifications This Way</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of Sectoin -->
+      <!-- Skills section -->
+      <section id="skills" class="section">
+         <div class="container text-center">
+             <h6 class="subtitle" style="font-size: 15px;"><b>Skills</b></h6>
+            <h6 class="section-title mb-4" style="color: #ff7a57;"><b>Why Choose me</b></h6>
+            <p class="mb-5 pb-4">Design is my craft, but problem-solving is my superpower.
+Over the years, I’ve built a well-rounded toolkit that blends strategy, creativity, and precision — allowing me to take ideas from napkin sketches to polished, high-impact products.</p>
+            <div class="our-portfolio">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-3 col-sm-6" style="margin-bottom: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/ui-ux.png" alt="">
+                              <br><br><span><b>UI/UX Design Principles</b></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/user-experience.png" alt="">
+                              <br><br><span><b>User Experience Design (UED)</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/touch-sensor.png" alt="">
+                              <br><br><span><b>Interaction <br>Design</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/edit-text.png" alt="">
+                              <br><br><span><b>Typography & Iconography</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/prototyping.png" alt="">
+                              <br><br><span><b>Prototyping</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/wireframe.png" alt="">
+                              <br><br><span><b>Wireframing</b></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/visual-communication.png" alt="">
+                              <br><br><span><b>Visual design</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/buyer.png" alt="">
+                              <br><br><span><b>User Personas</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6" style="margin-top: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/guideline.png" alt="">
+                              <br><br><span><b>Web Content Accessibility<br> Guidelines(WCAG)</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6" style="margin-top: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/code.png" alt="">
+                              <br><br><span><b>Front-end dev: HTML, CSS, JavaScript</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6" style="margin-top: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/seo.png"alt="">
+                              <br><br><span><b>Understanding<br> of SEO <br>Principles</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6" style="margin-top: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/solution.png" alt="">
+                              <br><br><span><b>Problem-solving <br>and <br>Critical Thinking</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6" style="margin-top: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/conversation%20(3).png" alt="">
+                              <br><br><span><b>Collaboration and Communication</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6" style="margin-top: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/book%20(1).png"alt="">
+                              <br><br><span><b>Continuous Learning</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6" style="margin-top: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                              <img src="assets/imgs/meticulous.png" alt="">
+                              <br><br><span><b>Attention to <br>Details</b>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                      <div class="col-lg-3 col-sm-6" style="margin-top: 30px;">
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                           <div class="showed-content">
+                               <a href = "https://drive.google.com/file/d/1x0dpGVgGHfXYWrPkhr9vGOfoPlMaSiiV/view?usp=sharing"
+                        Download = "Heramb_Pawar_Resume" target="_blank"><img src="https://i.pinimg.com/originals/eb/17/d0/eb17d0925c49ef13af6e84cdfeaad079.gif" alt="" style="width: auto; height: 100px;">
+                                   <br><br><span style="color:#ff7a57;"><b>Unlock more <br>Skills</b>
+                                   </span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of Skills sections -->
+      <!-- Portfolio section -->
+      <section id="portfolio" class="section">
+         <div class="container text-center">
+            <h6 class="subtitle" style="font-size: 15px;"><b>Portfolio</b></h6>
+            <h6 class="section-title mb-4" style="color: #ff7a57;"><b>Check My Wonderful Works</b></h6>
+            <p class="mb-5 pb-4">Design isn’t just what it looks like — it’s how it works, feels, and solves real problems.
+Below you'll find a curated selection of projects that reflect my approach to thoughtful, research-driven, and user-centered design.</p>
+            <div class="row">
+                  <div class="col-sm-12">
+<div class="box-area">
+    <div class="single-box">
+      <div class="img-area"><br><img src="assets/imgs/Screenshot%202024-08-07%20at%205.36.42%E2%80%AFPM.png" alt="" style="width: 100%;
+          height: 150px;margin-top: 42px;border-radius: 5px;"></div>
+      <div class="img-text"><br>
+        <span class="header-text"><strong>PAWS</strong></span>
+        <p>PAWs is a comprehensive web application designed to simplify pet care management for busy pet owners. It offers a wide range of services, including multiple pet profiles, shopping for pet products, booking vet services, grooming, and other care services.</p>
+           <a href = "https://www.behance.net/gallery/202455491/PAWs-UI-UX-Case-Study"
+                     target="_blank">
+                  <button class="btn btn-primary rounded mt-3" type = "button" Style="font-weight: 400;font-size: 11px;"> Learn More </button>
+                  </a>
+      </div>
+    </div>
+    
+    <div class="single-box">
+      <div class="img-area"><br><img src="assets/imgs/Screenshot%202024-08-07%20at%205.35.59%E2%80%AFPM.png" alt="" style="width: 100%;
+          height: 150px;margin-top: 42px;border-radius: 5px;"></div>
+      <div class="img-text"><br>
+        <span class="header-text"><strong>Elderly Watch</strong></span>
+        <p> Designed to cater to the needs of individuals, caregivers, and healthcare providers, Elderly Watch revolutionizes health management. Monitor vital signs, track medications, and receive emergency alerts—all in one user-friendly interface.</p>
+           <a href = "https://www.behance.net/gallery/179338931/Elderly-Watch"
+                      target="_blank">
+                  <button class="btn btn-primary rounded mt-3" type = "button" Style="font-weight: 400;font-size: 11px;"> Learn More </button>
+                  </a>
+      </div>
+    </div>
+    
+    <div class="single-box">
+      <div class="img-area"><br><img src="assets/imgs/Screenshot%202024-08-07%20at%205.34.14%E2%80%AFPM.png" alt="" style="width: 100%;
+          height: 150px;margin-top: 42px;border-radius: 5px;"></div>
+      <div class="img-text"><br>
+        <span class="header-text"><strong>Hive Builds</strong></span>
+        <p>HiveBuilds is an innovative and comprehensive smart bullding management platform designed to revolutionize the way
+buildings are operated.HiveBuilds empowers building managers to efficiently manage and optimize various smart devices. </p>
+           <a href = "https://www.behance.net/gallery/176581725/HiveBuilds"
+                     target="_blank">
+                  <button class="btn btn-primary rounded mt-3" type = "button" Style="font-weight: 400;font-size: 11px;"> Learn More </button>
+                  </a>
+      </div>
+    </div>
+    
+    
+  </div>  
+   <div class="box-area">
+    <div class="single-box">
+      <div class="img-area"><br><img src="assets/imgs/Screenshot%202024-08-07%20at%205.38.03%E2%80%AFPM.png" alt="" style="width: 100%;
+          height: 150px;margin-top: 42px;border-radius: 5px;"></div>
+      <div class="img-text"><br>
+        <span class="header-text"><strong>Cyberstruct</strong></span>
+        <p>Introducing Cyberstruct, the game-changing construction app that revolutionizes project management.
+Seamlessly integrating plans, schedules, and documents, it empowers teams with real-time updates and streamlined communication.</p>
+           <a href = "https://www.behance.net/gallery/175002565/Cyberstruct"
+                     target="_blank">
+                  <button class="btn btn-primary rounded mt-3" type = "button" Style="font-weight: 400;font-size: 12px;"> Learn More </button>
+                  </a>
+      </div>
+    </div>
+    
+    <div class="single-box">
+      <div class="img-area"><br><img src="assets/imgs/Screenshot%202024-08-07%20at%205.40.37%E2%80%AFPM.png" alt="" style="width: 100%;
+          height: 150px;margin-top: 42px;border-radius: 5px;"></div>
+      <div class="img-text"><br>
+        <span class="header-text"><strong>Trucker</strong></span>
+        <p>Trucker is a mobile and web application which provides a better truck booking experience.This is the place where the user has many options to select as per their needs and requirements.<br><br><br></p>
+           <a href = "https://www.behance.net/gallery/123443765/Trucker"
+                  target="_blank">
+                  <button class="btn btn-primary rounded mt-3" type = "button" Style="font-weight: 400;font-size: 12px;"> Learn More </button>
+                  </a>
+      </div>
+    </div>
+    
+    <div class="single-box">
+      <div class="img-area"><br><img src="assets/imgs/Screenshot%202024-08-07%20at%205.42.47%E2%80%AFPM.png" alt="" style="width: 100%;
+          height: 150px;margin-top: 42px;border-radius: 5px;"></div>
+      <div class="img-text"><br>
+        <span class="header-text"><strong>Budget Nest</strong></span>
+        <p>The lack of a comprehensive and user-friendly tool for tracking expenses, setting budgets, monitoring investments hinders individuals from making informed financial decisions and their financial well-being. There is a need for a reliable and intuitive Personal Finance Manager. </p>
+           <a href = "https://www.behance.net/gallery/172903291/Budget-Nest"
+                   target="_blank">
+                  <button class="btn btn-primary rounded mt-3" type = "button" Style="font-weight: 400;font-size: 12px;"> Learn More </button>
+                  </a>
+      </div>
+        
+    </div>
+      <a href = "https://www.behance.net/madheramb"
+                        Download = "Heramb_Pawar_Resume" target="_blank">
+                     <button class="- btn btn-primary rounded ml-4" type = "button">View More</button>
+                     </a>
+    
+  </div>                    
+             
+                </div>
+             
+             
+             
+             
+             
+             </div>
+          
+          
+          
+          </div>
+         
+                </section>
+      <!-- End of portfolio section -->
+      <!-- Testmonial Section -->
+      <section id="education" class="section">
+         <div class="container text-center">
+            <h6 class="subtitle" style="font-size: 15px;"><b>Education</b></h6>
+            <h6 class="section-title mb-4" style="color: #ff7a57;"><b>What I Have Studied</b></h6>
+            <p class="mb-5 pb-4">From code to creativity, and strategy to systems — my educational path has been anything but linear. And that’s exactly what makes it powerful.
+Each degree added a new lens to how I understand people, processes, and problems — and how I design solutions for them.</p>
+         </div>
+         <div class="row1-container">
+            <div class="box box-down cyan">
+               <h2 style="font-size: 20px;">Algonquin College of Applied Arts and Technology</h2>
+               <p>Postgraduate Degree</p>
+               <span><b>International Business</b></span><br>
+               <span>Sep 2022 - May 2023</span>
+               <img src="assets/imgs/AC_logo.png" alt="" style="width: 75px; height: 60px;float: right;">
+            </div>
+            <div class="box red">
+               <h2 style="font-size: 20px;">Conestoga College</h2>
+               <p>Postgraduate Degree</p>
+               <span><b>Project Management</b></span><br>
+               <span>Jan 2022 - Aug 2022</span>
+               <img src="assets/imgs/logo-conestoga-college.png" alt=""  style="width: 75px; height: 75px;float: right;">
+            </div>
+            <div class="box box-down blue">
+               <h2 style="font-size: 20px;">Savitribai Phule Pune University</h2>
+               <p>Bachelor of Engineering</p>
+               <span><b>Information Technology</b></span><br>
+               <span>Jun 2012 - May 2016</span>
+               <img src="assets/imgs/Savitribai_Phule_Pune_University_Logo.png" alt=""  style="width: 75px; height: 75px; float: right;">
+            </div>
+         </div>
+         <div class="row2-container">
+            <div class="box orange">
+               <h2 style="font-size: 20px;">Texas A&M University-Kingsville</h2>
+               <p>Master of Science</p>
+               <span><b>Computer Science</b></span><br>
+               <span>Jan 2017 - Dec 2018</span>
+               <img src="assets/imgs/Texas_A&M_University%E2%80%93Kingsville_seal.svg.png" alt="" style="width: 65px; height: 65px;float: right;">
+            </div>
+         </div>
+      </section>
+      <!-- End of testmonial section -->
+      <!-- Blog Section -->
+      <section id="experience" class="section">
+         <div class="container text-center">
+            <h6 class="subtitle" style="font-size: 15px;"><b>Experience</b></h6>
+            <h6 class="section-title mb-4" style="color: #ff7a57;"><b>Welcome To My Professional Journey</b></h6>
+            <p class="mb-5 pb-4">Every project, every team, every challenge — has shaped the designer I am today.
+From crafting design systems to streamlining healthcare workflows, my experience spans industries and continents. Here's how I've grown through solving real-world problems with research, empathy, and design.
+
+</p>
+            <div class="row text-left">
+               <div class="col-md-6">
+                  <div class="card border mb-6">
+                     <img src="assets/imgs/1_SC_PHARMACY_LOGO_PRIMARY%20(1).jpg" alt="" class=""  style="padding: 10px;width: 200px; height: auto;">
+                     <div class="card-body" style="border-top:0px solid black; margin-top: -20px;">
+                        <h5 class="card-title">UI/UX Designer & IT Co-ordinator</h5>
+                        <div class="post-details">
+                           <a  ><span style="color: black;"><b>Seamless Care Pharmacy</b></span><br> Oct 2023 - June 2024<br> Scarborough, Ontario, Canada</a>
+                        </div>
+                        <p style="font-size: 12px; text-align: justify;"></p>
+                        <ul style="font-size: 12px; text-align: justify;margin-left: -25px;">
+                           <li>Led end-to-end design of pharmacy software interfaces, improving user task efficiency
+by 25%.</li>
+                           <li>Conducted user interviews and usability testing with 20+ patients and staff to identify
+key pain points in the prescription process.</li>
+                           <li>Delivered wireframes, interactive prototypes, and UI mockups using Figma, reducing
+developer revision cycles by 20%.</li>
+                           <li>Collaborated with product and engineering teams to launch new features that reduced
+refill request time by 25%.</li>
+                           <li>Created scalable design components and documentation, accelerating design handoffs
+and improving consistency across platforms.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="card border mb-6">
+                     <img src="assets/imgs/CCA%20Logo%20Website%20Header.png" alt="" class=""  style="padding: 10px;width: 200px; height: auto;margin-top: 15px;">
+                     <div class="card-body" style="border-top:0px solid black;margin-top:-12px;">
+                        <h5 class="card-title">UI / UX Designer </h5>
+                        <div class="post-details">
+                            <a><span style="color: black;"><b>CCA Member Solutions</b></span><br> Apr 2019 - Jan 2021<br> Manchester, New Hampshire, USA</a>
+                        </div>
+                        <p style="font-size: 12px; text-align: justify;"></p>
+                        <ul style="font-size: 12px; text-align: justify;margin-left: -25px;">
+                           <li>Redesigned membership portal UI, resulting in a 7% increase in user engagement and
+10% reduction in bounce rates.</li>
+                           <li>Built and maintained a modular design system used across 5+ digital products, cutting
+design and dev time by 10%</li>
+                           <li>Partnered with stakeholders to translate business requirements into intuitive product
+experiences across desktop and mobile.</li>
+                           <li>Applied accessibility standards (WCAG 2.1) to ensure inclusive design for all user groups</li>
+                           <li>Conducted A/B testing to validate design decisions, improving user onboarding success
+rate by 15%</li>
+                          
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6" style="margin-top: 35px;">
+                  <div class="card border mb-6">
+                     <img src="assets/imgs/Texas-AM-University-Kingsville-logo.jpg" alt="" class="" style="padding: 10px;width: 200px; height: 85px;"><br>
+                     <div class="card-body" style="border-top:0px solid black; margin-top: -20px;">
+                        <h5 class="card-title">Graphic Designer Intern </h5>
+                        <div class="post-details">
+                            <a ><span style="color: black;"><b>Texas A&M University-Kingsville</b></span><br>  Feb 2018 - Dec 2018<br> Kingsville, Texas, USA</a>
+                        </div>
+                        <p style="font-size: 12px; text-align: justify;"></p>
+                        <ul style="font-size: 12px; text-align: justify;margin-left: -25px;">
+                           <li>Designed 50+ marketing and promotional materials for academic programs, boosting
+event attendance by 15%. </li>
+                           <li>Ensured visual consistency across print and digital touchpoints by aligning all assets with
+university branding guidelines.</li>
+                           <li>Collaborated with the IT and web team to improve homepage UI, contributing to a 7%
+increase in user session time.</li>
+                           <li>Supported user-focused redesign of internal academic tools based on staff and student
+feedback </li>
+                           <br>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6" style="margin-top: 35px;">
+                  <div class="card border mb-6">
+                     <img src="assets/imgs/20221230110837.png" alt="" class="" style="width: 140px; height: auto;padding: 10px;">
+                     <div class="card-body" style="border-top:0px solid black;margin-top: -10px;">
+                        <h5 class="card-title">Graphic Designer</h5>
+                        <div class="post-details" >
+                            <a><span style="color: black;"><b>SKN Sinhgad Institute Of Technology And Science</b></span> <br> Jul 2013 - Apr 2016<br> Lonavala, Maharashtra, India</a>
+                        </div>
+                        <p style="font-size: 12px; text-align: justify;"></p>
+                        <ul style="font-size: 12px; text-align: justify;margin-left: -25px;">
+                           <li>Produced 100+ visual assets (logos, brochures, event banners) that elevated
+institutional branding and student engagement by 20%.</li>
+                           <li>Supported cross-functional initiatives between departments and marketing, aligning
+creative output with institutional goals.</li>
+                           <li>Initiated a standardized template system, reducing content creation time by 25%.</li>
+                           <br>
+                            <br><br>
+                            <br>
+                        
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="awards" class="section mt-3">
+         <div class="container text-center">
+            <h6 class="subtitle" style="font-size: 15px;"><b>Awards</b></h6>
+            <h6 class="section-title mb-4" style="color: #ff7a57;"><b>What I have Achieved</b></h6>
+            <p class="mb-5 pb-4"> 
+               Great design solves problems — but every once in a while, it also wins awards.
+These recognitions aren’t just badges — they’re reminders of collaboration, creative risk-taking, and pushing boundaries.
+
+
+            </p>
+            <ul class="card-list">
+               <li class="card">
+                  <a>
+                  <img src="assets/imgs/Hack.jpeg" style="width: 200px; height: auto; border-radius: 10px;margin-top: 40px;">
+                  </a>
+                  <a >
+                     <h3 style="margin-top: 10px;">Hackathon HACK-UTD19</h3>
+                     <p>JP Morgan Chase Challenge First Position</p>
+                     <p>Issued by Hackathon Hack Ut-Dallas 2019 · Feb 2019</p>
+                  <a href = "https://devpost.com/software/helping-hands-caxrz5#updates"
+                     Download = "Hackathon" target="_blank" style="margin-bottom: 20px;: ">
+                  <button class="- btn btn-primary rounded ml-4" type = "button">Learn More</button>
+                  </a>
+                  </a>
+               </li>
+            </ul>
+              <ul class="card-list">
+               <li class="card">
+                  <a>
+                  <img src="assets/imgs/google-ux-design-professional-certificate.2.png" style="width: 200px; height: auto; border-radius: 10px;margin-top: 40px;">
+                  </a>
+                  <a >
+                     <h3 style="margin-top: 10px;">Google UX Design Professional Certificate</h3>
+    <p>Issued by Coursera</p>
+                  <a href = "https://www.credly.com/badges/f7ed4f4a-9173-4468-97b6-c787630cb290/public_url"
+                     Download = "Hackathon" target="_blank" style="margin-bottom: 20px;: ">
+                  <button class="- btn btn-primary rounded ml-4" type = "button">Learn More</button>
+                  </a>
+                  </a>
+               </li>
+            </ul>
+             <ul class="card-list">
+               <li class="card">
+                  <a>
+                  <img src="assets/imgs/fitt-diploma-in-international-trade.png" style="width: 200px; height: auto; border-radius: 10px;margin-top: 40px;">
+                  </a>
+                  <a >
+                     <h3 style="margin-top: 10px;">FITT Diploma in International Trade</h3>
+     <p>Issued by Forum for International Trade Training (FITT)</p>
+                  <a href = "https://www.credly.com/badges/02a27e95-1465-4efc-b0bd-9249e7282490/public_url"
+                     Download = "Hackathon" target="_blank" style="margin-bottom: 20px;: ">
+                  <button class="- btn btn-primary rounded ml-4" type = "button">Learn More</button>
+                  </a>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- Hire me section -->
+      <!-- End od Hire me section. -->
+      <!-- Contact Section -->
+      <section id="contact" class="position-relative section">
+         <div class="container text-center">
+            <h6 class="subtitle" style="font-size: 15px;"><b>Contact</b></h6>
+            <h6 class="section-title mb-4" style="color: #ff7a57;"><b>Get In Touch With Me</b></h6>
+            <p class="mb-5 pb-4">I'm thrilled that you've reached the contact page. This is the perfect place for us to connect and start a conversation.</p>
+            <section class="bg-gray p-0 section">
+               <div class="container">
+                  <div class="contact" id="contact">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-5">
+                              <div class="title">
+                                 <h3>Contact detail</h3>
+                              </div>
+                              <div class="content" style="text-align: left;padding-left: 100px;">
+                                 <!-- Info-1 -->
+                                 <div class="info">
+                                    <i class="fa fa-mobile" aria-hidden="true" style="color: #ff7a57"></i>
+                                    <h4 class="d-inline-block">Phone:<br>
+                                       <span>+1 437-440-6404</span>
+                                    </h4>
+                                 </div>
+                                 <!-- Info-2 -->
+                                 <div class="info">
+                                    <i class="fa fa-envelope-o" aria-hidden="true" style="color: #ff7a57;font-size: 22px;" ></i>
+                                    <h4 class="d-inline-block">Email:
+                                       <br>
+                                       <span>madheramb@gmail.com</span>
+                                    </h4>
+                                 </div>
+                                 <!-- Info-3 -->
+                                 <div class="info" style="margin-bottom: 50px;">
+                                    <i class="fa fa-map-marker" aria-hidden="true" style="color: #ff7a57;font-size: 26px;"></i>
+                                    <h4 class="d-inline-block">Location:<br>
+                                       <span>Toronto,ON</span>
+                                    </h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-7">
+                              <form action="https://formbold.com/s/91yvB" method="POST">
+                                 <div class="row">
+                                    <div class="col-sm-6">
+                                       <input type="text" placeholder="First Name" name="First Name" class="form-control">
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <input type="text" placeholder="Last Name" name="Last Name" class="form-control">
+                                    </div>
+                                    <div class="col-sm-12">
+                                       <input type="email" placeholder="Email" name="email" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <textarea class="form-control" name="message" placeholder="Type your message"></textarea>
+                                 </div>
+                                 <button class="btn btn-block" type="submit">Send Now!</button>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </section>
+      <!-- End of Contact Section -->
+      <!-- Page Footer -->
+      <footer class="page-footer">
+         <div class="footer" style="">
+            <div class="bubbles">
+               <div class="bubble" style="--size:4.857222232530019rem; --distance:9.057727427075914rem; --position:35.29041736974411%; --time:3.3724194037449347s; --delay:-2.0161933754492734s;"></div>
+               <div class="bubble" style="--size:5.110861500040401rem; --distance:6.7419561938628rem; --position:81.50882294905786%; --time:2.1628322480229842s; --delay:-3.832122377124947s;"></div>
+               <div class="bubble" style="--size:2.5018009511453876rem; --distance:6.715957595596801rem; --position:31.256683890265982%; --time:2.2178901157486086s; --delay:-2.1955748410346003s;"></div>
+               <div class="bubble" style="--size:3.9220969563532977rem; --distance:6.58660711256345rem; --position:49.24550462451235%; --time:2.389377454658527s; --delay:-3.8462299441162906s;"></div>
+               <div class="bubble" style="--size:5.277553581205309rem; --distance:6.286815255480291rem; --position:31.320717923031857%; --time:2.3582941098161547s; --delay:-2.9218657134484154s;"></div>
+               <div class="bubble" style="--size:4.557620993953753rem; --distance:7.203142455427036rem; --position:59.084707868235014%; --time:3.3491028440612793s; --delay:-2.0263472151296256s;"></div>
+               <div class="bubble" style="--size:5.442229009677803rem; --distance:9.889684751417615rem; --position:75.3647230425798%; --time:3.125902134848289s; --delay:-2.0246417897187055s;"></div>
+               <div class="bubble" style="--size:4.8299480195232185rem; --distance:9.601018578380874rem; --position:34.10754246884379%; --time:2.629363281630983s; --delay:-3.933239695590741s;"></div>
+               <div class="bubble" style="--size:3.2034196462344706rem; --distance:6.130929324905491rem; --position:7.085608048343598%; --time:3.120819713186517s; --delay:-2.8630266595339973s;"></div>
+               <div class="bubble" style="--size:3.4470425640090507rem; --distance:9.90427818001151rem; --position:95.08505146268743%; --time:2.25612382775503s; --delay:-2.6841985282654526s;"></div>
+               <div class="bubble" style="--size:4.078784917143338rem; --distance:7.495516086346432rem; --position:66.33173747065612%; --time:3.9224815514433407s; --delay:-2.879099876240482s;"></div>
+               <div class="bubble" style="--size:3.4931468239104992rem; --distance:7.76356047362665rem; --position:67.11364134031045%; --time:3.353786582379498s; --delay:-3.007241854874672s;"></div>
+               <div class="bubble"></div>
+               <div class="bubble" style="--size:4.707418781930975rem; --distance:9.844188039400748rem; --position:95.42313657989006%; --time:2.80090557896425s; --delay:-3.4866404994106466s;"></div>
+               <div class="bubble" style="--size:5.328165556878297rem; --distance:7.171083989972705rem; --position:9.812282496014618%; --time:3.924536852969656s; --delay:-3.3579069318960335s;"></div>
+               <div class="bubble" style="--size:3.086637076132492rem; --distance:6.719170939657586rem; --position:-4.5176451452691975%; --time:2.010995669704649s; --delay:-3.854463798140378s;"></div>
+               <div class="bubble" style="--size:2.4450382893894655rem; --distance:9.434990962865783rem; --position:32.53541616095758%; --time:3.164153599699447s; --delay:-2.605872049772202s;"></div>
+               <div class="bubble" style="--size:2.468150029843313rem; --distance:8.807134575815422rem; --position:40.23943728756778%; --time:3.424106699100093s; --delay:-2.926389852140057s;"></div>
+               <div class="bubble" style="--size:3.253423006991535rem; --distance:6.853055507319398rem; --position:27.283501571857016%; --time:3.5572444749211307s; --delay:-3.3568346815832424s;"></div>
+               <div class="bubble" style="--size:3.9792294880939005rem; --distance:7.929733113441404rem; --position:11.945055094285134%; --time:3.9938758945510835s; --delay:-3.4763205988588743s;"></div>
+               <div class="bubble" style="--size:3.896247019201729rem; --distance:9.242136975482946rem; --position:64.69645960587339%; --time:3.9779855165483236s; --delay:-2.610710875330065s;"></div>
+               <div class="bubble" style="--size:3.6736644955267117rem; --distance:6.2607227370111636rem; --position:47.681526004977286%; --time:3.563726439659955s; --delay:-2.6545266349579113s;"></div>
+               <div class="bubble" style="--size:4.498233325873703rem; --distance:8.100492138958371rem; --position:59.54717895387853%; --time:3.2677826155587137s; --delay:-2.812098104086385s;"></div>
+               <div class="bubble" style="--size:2.03420628517354rem; --distance:7.514215478981946rem; --position:6.776312862481149%; --time:2.460771383231186s; --delay:-3.0028480606263477s;"></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style="--size:5.538295134565416rem; --distance:9.699498673309197rem; --position:45.73207161932032%; --time:2.412561340356359s; --delay:-2.428537715246451s;"></div>
+               <div class="bubble" style="--size:3.9019057670106534rem; --distance:8.069678684865554rem; --position:5.6672845422643885%; --time:2.859312282276703s; --delay:-2.853265784772767s;"></div>
+               <div class="bubble" style="--size:5.767702553247781rem; --distance:6.772400702310413rem; --position:76.30337761837242%; --time:2.9211637915028392s; --delay:-2.1828176674656383s;"></div>
+               <div class="bubble" style="--size:3.6941185274800166rem; --distance:6.365656577838049rem; --position:21.245323435058594%; --time:3.197005438872935s; --delay:-3.1254098901344163s;"></div>
+               <div class="bubble" style="--size:2.36345296813498rem; --distance:8.760139569479112rem; --position:79.97843172114628%; --time:3.6293255444006345s; --delay:-3.4975387257525807s;"></div>
+               <div class="bubble" style="--size:4.709539775356749rem; --distance:7.341015471301803rem; --position:72.73997697842945%; --time:2.7390906211434163s; --delay:-3.4897025421685495s;"></div>
+               <div class="bubble" style="--size:4.180811128855998rem; --distance:6.98700715991256rem; --position:-1.1926244555355248%; --time:3.200852317978868s; --delay:-2.8925668926320247s;"></div>
+               <div class="bubble" style="--size:3.922555238950462rem; --distance:8.099241523868656rem; --position:34.27989499844967%; --time:3.3813320230577233s; --delay:-3.563378605736889s;"></div>
+               <div class="bubble" style="--size:3.03167973985912rem; --distance:6.123112466146898rem; --position:30.240173066381274%; --time:3.283305209292446s; --delay:-2.8113233014924806s;"></div>
+               <div class="bubble" style="--size:4.923158870189591rem; --distance:9.96360546612146rem; --position:45.9536255238351%; --time:3.0284042438581436s; --delay:-3.6940689514186227s;"></div>
+               <div class="bubble" style="--size:5.732619623817773rem; --distance:9.414127790758123rem; --position:49.16390442665896%; --time:3.472236179741701s; --delay:-3.798465762562557s;"></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style="--size:5.919107062757212rem; --distance:9.534438587156988rem; --position:37.2211697932756%; --time:3.1921115153308364s; --delay:-3.8470702382954816s;"></div>
+               <div class="bubble" style="--size:4.037516099613745rem; --distance:6.812594104644413rem; --position:15.421978964676871%; --time:3.779650442582717s; --delay:-2.3982267367753014s;"></div>
+               <div class="bubble" style="--size:4.657171478945725rem; --distance:7.187357818794481rem; --position:71.17681320753121%; --time:2.3444053741420396s; --delay:-3.0720477294131783s;"></div>
+               <div class="bubble" style="--size:5.846139108840918rem; --distance:6.851918834451273rem; --position:74.10310409972202%; --time:3.5752816863804004s; --delay:-3.9598146783024717s;"></div>
+               <div class="bubble" style="--size:2.8204813152204924rem; --distance:7.014561918964407rem; --position:72.93674384972118%; --time:2.0081467521571255s; --delay:-3.7888522898538066s;"></div>
+               <div class="bubble" style="--size:3.0281499107270733rem; --distance:6.959019467852395rem; --position:21.90793734130046%; --time:3.7717241954234666s; --delay:-2.0235836201909323s;"></div>
+               <div class="bubble" style="--size:2.8552345475130547rem; --distance:6.290892197088412rem; --position:20.167824410385407%; --time:2.8945504078284157s; --delay:-2.4149152012905173s;"></div>
+               <div class="bubble" style="--size:2.591679756103283rem; --distance:7.0513078338503rem; --position:14.07823112026351%; --time:3.3481132421878805s; --delay:-3.5062993170236862s;"></div>
+               <div class="bubble" style="--size:3.254047505579064rem; --distance:9.491211563322855rem; --position:54.44039730099574%; --time:2.898306406911138s; --delay:-3.8957965467388376s;"></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style="--size:5.018197415592944rem; --distance:7.962772640668489rem; --position:75.44576683560412%; --time:2.8740076212894934s; --delay:-3.5118313034927424s;"></div>
+               <div class="bubble" style="--size:3.301718706409008rem; --distance:7.756280844407382rem; --position:1.30326146551816%; --time:3.5330168557862227s; --delay:-2.6733674077630867s;"></div>
+               <div class="bubble" style="--size:4.241690213781606rem; --distance:9.107079087969048rem; --position:9.265779847395667%; --time:2.6943916669425847s; --delay:-3.5109354785706746s;"></div>
+               <div class="bubble" style="--size:2.2282731963481925rem; --distance:8.63207264158579rem; --position:18.305505779940145%; --time:3.7932778557494684s; --delay:-3.1510625489779995s;"></div>
+               <div class="bubble" style="--size:3.7791485916936036rem; --distance:6.534522892430468rem; --position:34.876162589551036%; --time:2.915448915059427s; --delay:-2.819487870689022s;"></div>
+               <div class="bubble" style="--size:4.626987796109773rem; --distance:8.238465457274721rem; --position:61.66489492644587%; --time:2.0670485766158007s; --delay:-2.1351467398799797s;"></div>
+               <div class="bubble" style="--size:4.3603813923619095rem; --distance:6.066698793500338rem; --position:82.92692079934791%; --time:3.654702927133766s; --delay:-2.8752964580406486s;"></div>
+               <div class="bubble" style="--size:4.253665067201991rem; --distance:9.217894162547534rem; --position:39.29647270311694%; --time:2.4579609785898864s; --delay:-2.91635040264978s;"></div>
+               <div class="bubble" style="--size:4.292858059361811rem; --distance:9.160339917461169rem; --position:74.0199867179094%; --time:2.4891606003267266s; --delay:-3.8438170901210515s;"></div>
+               <div class="bubble" style="--size:2.3227561827989884rem; --distance:9.811022779537183rem; --position:80.08278182860201%; --time:2.709269388739902s; --delay:-2.8752434074855158s;"></div>
+               <div class="bubble" style="--size:4.581190854285563rem; --distance:9.183156070397565rem; --position:21.674473839019605%; --time:3.2428701917919307s; --delay:-2.535513376386335s;"></div>
+               <div class="bubble" style="--size:3.810595349389006rem; --distance:6.1767374205285615rem; --position:73.11829426892939%; --time:3.2606025038764512s; --delay:-3.7064451714790088s;"></div>
+               <div class="bubble" style="--size:4.211595965462255rem; --distance:8.997797949082205rem; --position:78.52107086276662%; --time:3.577804733351535s; --delay:-2.1243536514194186s;"></div>
+               <div class="bubble" style="--size:2.639889685297126rem; --distance:6.623601915199581rem; --position:24.307188070342576%; --time:3.2455410926503783s; --delay:-2.4219243352732067s;"></div>
+               <div class="bubble" style="--size:5.618905691313898rem; --distance:9.846379354063401rem; --position:9.204224459718905%; --time:3.341765996633019s; --delay:-2.8389200883161174s;"></div>
+               <div class="bubble" style="--size:4.290268574469505rem; --distance:8.941446910981062rem; --position:45.68085064390291%; --time:2.5396183846760874s; --delay:-2.9396637162661157s;"></div>
+               <div class="bubble" style="--size:2.414393499156274rem; --distance:7.48197376002701rem; --position:25.724334914664436%; --time:3.5909349499066447s; --delay:-3.7292590900137146s;"></div>
+               <div class="bubble" style="--size:3.683483357116719rem; --distance:9.419204913446944rem; --position:40.942742147405774%; --time:3.2981307712285464s; --delay:-2.1468314808217657s;"></div>
+               <div class="bubble" style="--size:4.417270746712908rem; --distance:8.515476779096208rem; --position:72.374848266764%; --time:3.6485304310193185s; --delay:-3.788905266597427s;"></div>
+               <div class="bubble" style="--size:5.559765734091197rem; --distance:8.665058936412446rem; --position:6.295351467399916%; --time:3.6672557347382244s; --delay:-3.671909117257371s;"></div>
+               <div class="bubble" style="--size:2.011608607772799rem; --distance:7.203620723851382rem; --position:78.85348096585571%; --time:3.922211282090728s; --delay:-3.24805752460506s;"></div>
+               <div class="bubble" style="--size:3.0430069771521513rem; --distance:9.595354190291797rem; --position:96.65797127134053%; --time:3.0356274973629027s; --delay:-3.038657885888831s;"></div>
+               <div class="bubble" style="--size:4.222635534143755rem; --distance:8.22744012673094rem; --position:39.69848096312247%; --time:3.808688403149098s; --delay:-3.3128507505704388s;"></div>
+               <div class="bubble" style="--size:5.729045691208196rem; --distance:8.561644504443667rem; --position:80.00539406246986%; --time:2.972163224864684s; --delay:-2.511766426478517s;"></div>
+               <div class="bubble" style="--size:5.16303537693883rem; --distance:9.596447195412594rem; --position:77.60440488057984%; --time:3.3993138270985677s; --delay:-3.4766404595484754s;"></div>
+               <div class="bubble" style="--size:5.144218052665508rem; --distance:8.72151510805373rem; --position:32.25252405797176%; --time:3.2378877167804383s; --delay:-3.1757064747965034s;"></div>
+               <div class="bubble" style="--size:2.7226367708152592rem; --distance:7.521290706693816rem; --position:2.2845770209292464%; --time:3.4949087639752783s; --delay:-2.7136900322194775s;"></div>
+               <div class="bubble" style="--size:2.4945821680909024rem; --distance:7.502566406206033rem; --position:34.103491986279245%; --time:3.7538215772585515s; --delay:-2.2777437203962063s;"></div>
+               <div class="bubble" style="--size:4.065836563291042rem; --distance:6.566594846495413rem; --position:8.834323301379634%; --time:3.597001023691286s; --delay:-3.2839508727203692s;"></div>
+               <div class="bubble" style="--size:2.533892769552029rem; --distance:8.618032518762204rem; --position:87.2628981727358%; --time:2.217945436775332s; --delay:-3.998149442130266s;"></div>
+               <div class="bubble" style="--size:5.9028077682093745rem; --distance:7.092692978523129rem; --position:58.086724303098805%; --time:2.0178491673133405s; --delay:-2.29341046986242s;"></div>
+               <div class="bubble" style="--size:3.837813053921807rem; --distance:9.152162361292906rem; --position:12.524787663018525%; --time:3.9052214796385063s; --delay:-2.3625314137379876s;"></div>
+               <div class="bubble" style="--size:3.7723434806638423rem; --distance:6.015272796062492rem; --position:12.680409921505284%; --time:3.1424440703271954s; --delay:-3.19109729250903s;"></div>
+               <div class="bubble" style="--size:5.1574929959179965rem; --distance:8.505814049850105rem; --position:64.42965836550617%; --time:3.304269707972309s; --delay:-3.3859214093663206s;"></div>
+               <div class="bubble" style="--size:3.2500487707390926rem; --distance:8.1655127628665rem; --position:19.35729231889811%; --time:2.320394183722203s; --delay:-3.8464069347612027s;"></div>
+               <div class="bubble" style="--size:5.67534884517346rem; --distance:6.484867141407167rem; --position:71.15876909170088%; --time:3.04756382864741s; --delay:-3.5336789967518105s;"></div>
+               <div class="bubble" style="--size:4.533231676507609rem; --distance:7.441077341014968rem; --position:76.96782444276876%; --time:2.7195970405732175s; --delay:-2.4273187708281676s;"></div>
+               <div class="bubble" style="--size:5.0445268907356775rem; --distance:8.746437243522344rem; --position:79.53322206711495%; --time:2.7623115498031967s; --delay:-3.5340937239345327s;"></div>
+               <div class="bubble" style="--size:4.033288553236807rem; --distance:7.390491542418986rem; --position:59.681282378356656%; --time:2.6256567523227616s; --delay:-2.6024531233675803s;"></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style="--size:5.24979039511958rem; --distance:6.613713690058718rem; --position:8.373249341115015%; --time:2.946604551233897s; --delay:-2.087580067106482s;"></div>
+               <div class="bubble" style="--size:3.3343492289588736rem; --distance:9.244807038419268rem; --position:86.20183155012333%; --time:3.3532645021233387s; --delay:-2.5070117056106804s;"></div>
+               <div class="bubble" style="--size:5.169443203211633rem; --distance:9.765741577810555rem; --position:22.420089451679182%; --time:2.34658047794557s; --delay:-2.994404894083272s;"></div>
+               <div class="bubble" style="--size:5.7970369459842965rem; --distance:8.876655199225521rem; --position:70.88571287049335%; --time:3.87749575899781s; --delay:-2.645419376289943s;"></div>
+               <div class="bubble" style="--size:4.288735957279037rem; --distance:8.613191798048003rem; --position:-1.745332259476644%; --time:2.1640745901302063s; --delay:-3.61789461739076s;"></div>
+               <div class="bubble" style="--size:4.5468308793526rem; --distance:7.765008503787546rem; --position:31.26721593880982%; --time:3.8585111586766767s; --delay:-2.7758054386691215s;"></div>
+               <div class="bubble" style="--size:5.104077950173404rem; --distance:9.549017084354414rem; --position:62.96801455343848%; --time:2.778599290774215s; --delay:-2.3079757345148852s;"></div>
+               <div class="bubble" style="--size:5.693973855411306rem; --distance:9.339174327824463rem; --position:30.300902890434223%; --time:3.7223039529294155s; --delay:-3.684760415888999s;"></div>
+               <div class="bubble" style="--size:3.8601715506467578rem; --distance:7.448863022155307rem; --position:20.12002678263556%; --time:2.3906033851212114s; --delay:-3.7302352999726183s;"></div>
+               <div class="bubble" style="--size:3.409025055662428rem; --distance:8.621694148727194rem; --position:1.8010549637070516%; --time:3.060789391272947s; --delay:-3.1786787796689517s;"></div>
+               <div class="bubble" style="--size:2.3770179920254817rem; --distance:7.39540092590036rem; --position:70.03230503184693%; --time:3.443949354572044s; --delay:-2.4328549217114848s;"></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style="--size:2.0389618731688026rem; --distance:6.2277940399707505rem; --position:-2.3600465483999056%; --time:3.7772812655204704s; --delay:-3.44873293876759s;"></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style="--size:3.9012841193882917rem; --distance:8.47862143231606rem; --position:91.22651749704409%; --time:2.02538877951306s; --delay:-3.868904877417136s;"></div>
+               <div class="bubble" style="--size:2.740680104824075rem; --distance:8.10607255732291rem; --position:71.12180120259066%; --time:3.8399099972308597s; --delay:-2.2732065844959957s;"></div>
+               <div class="bubble" style="--size:2.0979727790622285rem; --distance:7.054146006313771rem; --position:42.71714784537912%; --time:3.568715070089005s; --delay:-2.0931374246032854s;"></div>
+               <div class="bubble" style="--size:5.463676032704519rem; --distance:6.635647294876706rem; --position:39.26802191047077%; --time:3.760877295208705s; --delay:-3.7689977623986084s;"></div>
+               <div class="bubble" style="--size:4.732003058916559rem; --distance:8.318445609583486rem; --position:63.674031624543034%; --time:3.413490950474006s; --delay:-2.454646364837453s;"></div>
+               <div class="bubble" style="--size:3.332538536899606rem; --distance:6.178773112658034rem; --position:73.72458936496817%; --time:3.6216670161420543s; --delay:-3.8999980796051297s;"></div>
+               <div class="bubble" style="--size:4.214550825030726rem; --distance:9.30028947768637rem; --position:82.28673271149547%; --time:3.2921723699610537s; --delay:-2.7599053522667027s;"></div>
+               <div class="bubble" style="--size:4.246446274023355rem; --distance:7.87902383274038rem; --position:25.089319500271543%; --time:2.516613122451325s; --delay:-3.030117161558004s;"></div>
+               <div class="bubble" style="--size:4.429727246011896rem; --distance:6.853125659311215rem; --position:40.1639061240346%; --time:3.6877499889027234s; --delay:-3.6640428061833594s;"></div>
+               <div class="bubble" style="--size:5.322087691008853rem; --distance:8.192095375571288rem; --position:68.83832553696006%; --time:3.5812175106021367s; --delay:-2.9242341741906333s;"></div>
+               <div class="bubble" style="--size:4.82096578299348rem; --distance:7.431046294643927rem; --position:22.022578744029463%; --time:3.2746908127917274s; --delay:-3.8809255184932314s;"></div>
+               <div class="bubble" style="--size:4.434869185555471rem; --distance:6.607731487514015rem; --position:77.0504989171911%; --time:2.949812860701449s; --delay:-3.6443045336043873s;"></div>
+               <div class="bubble" style="--size:2.238832303575446rem; --distance:9.219232118150952rem; --position:48.42670932429865%; --time:3.560460677298501s; --delay:-3.766913736013107s;"></div>
+               <div class="bubble" style="--size:4.036312415773576rem; --distance:6.398714769605734rem; --position:25.370124002535373%; --time:3.495008439252118s; --delay:-3.0623015147015495s;"></div>
+               <div class="bubble" style="--size:2.721944374158607rem; --distance:9.199857899970224rem; --position:5.176792789720874%; --time:2.859422614233153s; --delay:-3.7737180242826223s;"></div>
+               <div class="bubble" style="--size:5.167815818840791rem; --distance:8.845291435115382rem; --position:49.42978034892957%; --time:2.1167957245135502s; --delay:-2.4301632114829936s;"></div>
+               <div class="bubble" style="--size:3.786340377641107rem; --distance:6.995929946901081rem; --position:89.9292245280504%; --time:3.2046283421858663s; --delay:-3.33092592333465s;"></div>
+               <div class="bubble" style="--size:4.6387436847121535rem; --distance:7.352456249677266rem; --position:3.816067092679665%; --time:3.6402946896845854s; --delay:-3.8390837144912116s;"></div>
+               <div class="bubble" style="--size:2.07658159445141rem; --distance:7.777957257435129rem; --position:35.77620253733539%; --time:2.144188222807778s; --delay:-3.994301486600662s;"></div>
+               <div class="bubble" style="--size:5.672687065298296rem; --distance:8.815098584415471rem; --position:61.25318583105853%; --time:2.526979786747336s; --delay:-2.75911157618473s;"></div>
+               <div class="bubble" style="--size:2.2370525253158107rem; --distance:8.46349237050628rem; --position:75.36655281184692%; --time:2.5568858104859093s; --delay:-2.5891949452130487s;"></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style=""></div>
+               <div class="bubble" style="--size:2.640118995703685rem; --distance:6.7065671769783215rem; --position:24.872843936066367%; --time:2.959959524109186s; --delay:-3.1990381834340886s;"></div>
+               <div class="bubble" style="--size:5.6203112678394564rem; --distance:9.335210166384549rem; --position:76.30124114192353%; --time:2.6463540149646603s; --delay:-3.3877526206774746s;"></div>
+               <div class="bubble" style="--size:3.468306420156752rem; --distance:9.508053803546144rem; --position:82.85409195179263%; --time:3.2374111885046917s; --delay:-3.548881668915037s;"></div>
+            </div>
+            <div class="content">
+               <div>
+                  <div>
+                     <a>        <img src="assets/imgs/new_logo.svg" style="width: 70px;height: auto; margin-left: 40px;" alt=""></a>
+                     <p>
+                     <p>
+                        ©  <script>document.write(new Date().getFullYear())</script> madheramb
+                     </p>
+                  </div>
+               </div>
+               <div class="socials">
+                  <a class="social-item" href="https://www.linkedin.com/in/herambpawar/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a class="social-item" href="https://www.behance.net/madheramb" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                  <a class="social-item" href="https://www.facebook.com/reddevil.heramb" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+               </div>
+            </div>
+         </div>
+         <svg style="position:fixed; top:70vh">
+            <defs>
+               <filter id="blob">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+               </filter>
+            </defs>
+         </svg>
+      </footer>
+      <!-- End of page footer -->
+      <!-- core  -->
+      <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+      <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+      <!-- bootstrap 3 affix -->
+      <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+      <!-- steller js -->
+      <script src="assets/js/steller.js"></script>
+   </body>
+</html>
+
